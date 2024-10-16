@@ -1,0 +1,15 @@
+<div id="presentazione">
+  <h1>Nome: {{ nome }} Cognome: {{ cognome }} Età: {{ eta }}</h1>
+
+  <p>Hobby: {{ hobby }}</p>
+
+  <input type="text" [(ngModel)]="nome" />
+
+  <p>il tuo nome è: {{ nome }}</p>
+
+  <button disabled="true">Sono disabilitato</button>
+
+  <button (click)="onBtnClick()">Conta</button>
+
+  <p>Sono il counter {{ count }}</p>
+</div>

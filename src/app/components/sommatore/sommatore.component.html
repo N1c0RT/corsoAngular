@@ -1,0 +1,17 @@
+<p>sommatore works!</p>
+
+<input
+  type="number"
+  [(ngModel)]="num1"
+  placeholder="Inserisci il primo numero"
+/>
+
+<input
+  type="number"
+  [(ngModel)]="num2"
+  placeholder="Inserisci il secondo numero"
+/>
+
+<button (click)="sommaN()">Somma</button>
+
+<p>Il risultato è: {{ risultato }}</p>

@@ -1,0 +1,15 @@
+<!--<p>hello-world works!</p>
+
+<h1>{{ message }}{{ name }}</h1>
+
+<button (click)="saluta()">cliccami</button>-->
+
+<div *ngIf="isShow; else isFalse">
+  questo contenuto viene mostrato solo se true
+</div>
+
+<ng-template #isFalse>
+  questo contenuto verrà mostrato se la condition è false
+</ng-template>
+
+<button (click)="this.isShow = !isShow">cliccami</button>
